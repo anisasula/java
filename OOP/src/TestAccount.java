@@ -1,4 +1,6 @@
-
+/*klasa Account tesr perdoret per te testuar klasen Account.
+ * @author Anisa
+ *  */
 public class TestAccount {
 
 	public static void main(String[] args) {
