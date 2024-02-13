@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class ObjektGjeometrik {
+public class ObjektGjeometrik extends Object {
 	private String ngjyra;
 	private boolean ngjyrosur;
 	private Date dataKrijimit;
@@ -9,11 +9,13 @@ public class ObjektGjeometrik {
 	 * konstruktori default
 	 */
 	public ObjektGjeometrik() {
+		System.out.println("Konstruktori pa parametra i klases ObjektGjeometrik");
 		this.dataKrijimit = new Date();
 	}
 	
 	public ObjektGjeometrik(String ngjyra, boolean ngjyrosur) {
-		this();
+		this();//therret konstruktorin default
+		System.out.println("Konstruktori me parametra i klases ObjektGjeometrik");
 		this.ngjyra = ngjyra;
 		this.ngjyrosur = ngjyrosur;
 	}
