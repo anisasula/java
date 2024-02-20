@@ -68,6 +68,7 @@ public class Trekendesh extends ObjektGjeometrik {
 	 * llogarit perimetrin e trekendeshit
 	 * @return brinja1 + brinja2 + brinja3
 	 */
+	@Override
 	public double getPerimeter() {
 		return brinja1+brinja2+brinja3;
 	}
@@ -75,6 +76,7 @@ public class Trekendesh extends ObjektGjeometrik {
 	 * llogarit siperfaqen e trekendeshit sipas formules se Heronit
 	 * @return siperfaqja e  trekendeshit
 	 */
+	@Override
 	public double getSiperfaqe() {
 		double hp=getPerimeter()/2.0; //gjysem perimeter
 		return Math.sqrt(hp*(hp-brinja1)*(hp-brinja2)*(hp-brinja3));

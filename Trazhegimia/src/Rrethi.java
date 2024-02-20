@@ -42,6 +42,7 @@ public class Rrethi extends ObjektGjeometrik {
 	 * llogarit perimetrin e rrethit
 	 * @return 2 * pi * rrezja
 	 */
+	@Override
 	public double getPerimeter() {
 		return 2 * Math.PI * rrezja;
 	}
@@ -49,6 +50,7 @@ public class Rrethi extends ObjektGjeometrik {
 	 * llogarit siperfaqen e rrethit
 	 * @return siperfaqja e  rrethit
 	 */
+	@Override
 	public double getSiperfaqe() {
 		return Math.PI * rrezja * rrezja;
 	}

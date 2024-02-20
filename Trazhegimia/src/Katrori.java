@@ -8,7 +8,7 @@ public class Katrori extends Drejtkendesh {
 	private double brinja1=1.0;
 	private double brinja2=1.0;
 	
-	public Katrori() {
+	public Katrori(String string, boolean b, int i) {
 		super();
 	}
 

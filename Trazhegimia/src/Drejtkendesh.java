@@ -52,9 +52,11 @@ public double getBrinja2() {
 public void setBrinja2(double brinja2) {
 	this.brinja2 = brinja2;
 }
+@Override
 public double getPerimeter() {
 	return  2*(brinja1 +brinja2);
 }
+@Override
 public double getSiperfaqe() {
 	return 2*(brinja1 +brinja2);
 }
@@ -62,6 +64,4 @@ public double getSiperfaqe() {
 public String toString() {
 	return   String.format("Drejtkendeshi me  brinje %.2f,%.2f\n",brinja1,brinja2)+ super.toString();
 }
-
-
 }
