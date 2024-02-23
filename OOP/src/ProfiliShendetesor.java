@@ -26,5 +26,7 @@ public class ProfiliShendetesor {
 		public double getPesha() {return pesha;}
 		public void setPesha(double pesha) {this.pesha = pesha;}
 		
-		public double getBMI ()
+		public double getBMI () {
+			return 0.0;
+		}
 }

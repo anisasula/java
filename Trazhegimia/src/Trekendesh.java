@@ -14,11 +14,15 @@ public class Trekendesh extends ObjektGjeometrik {
 	 * @param brinja1
 	 * @param brinja2
 	 * @param brinja3
+	 * @throws IllegalArgumentException kur njera nga brinjet eshte negative
 	 */
 	protected Trekendesh(String ngjyra, boolean ngjyrosur,double brinja1, double brinja2, double brinja3) {
 		super(ngjyra, ngjyrosur);
 		System.out.println("Konstruktori me parametra i klases Trekendesh");
 		
+		
+		if(brinja1<=0 || brinja2<=0 || brinja3<=0)
+			throw new IllegalArgumentException("Njera nga brinjet eshte negative");
 		this.brinja1=brinja1;
 		this.brinja2=brinja2;
 		this.brinja3=brinja3;	
@@ -35,6 +39,8 @@ public class Trekendesh extends ObjektGjeometrik {
 	 */
 	public void setBrinja1(double brinja1) {
 		this.brinja1 = brinja1;
+		if( brinja2<=0 || brinja3<=0)
+			throw new IllegalArgumentException("Njera nga brinjet eshte negative");
 	}
 
 	/**
@@ -49,6 +55,8 @@ public class Trekendesh extends ObjektGjeometrik {
 	 */
 	public void setBrinja2(double brinja2) {
 		this.brinja2 = brinja2;
+		if(brinja1<=0 ||  brinja3<=0)
+			throw new IllegalArgumentException("Njera nga brinjet eshte negative");
 	}
 
 	/**
@@ -63,6 +71,8 @@ public class Trekendesh extends ObjektGjeometrik {
 	 */
 	public void setBrinja3(double brinja3) {
 		this.brinja3 = brinja3;
+		if(brinja1<=0 || brinja2<=0)
+			throw new IllegalArgumentException("Njera nga brinjet eshte negative");
 	}
 	/**
 	 * llogarit perimetrin e trekendeshit
